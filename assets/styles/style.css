@@ -10,6 +10,10 @@ body {
   line-height: 16px;
 }
 
+h2 {
+  text-transform: uppercase;
+}
+
 header {
   margin: 0 100px;
   position: sticky;
@@ -160,13 +164,7 @@ header {
 }
 .menu h2 {
   margin: 0;
-}
-
-.menu__section--top h2 {
-  font-size: 20px;
-}
-.menu__section--top h2::after {
-  content: "";
+  padding-left: 8px;
 }
 
 .menu__section--mid ul {
@@ -187,6 +185,7 @@ header {
   margin: 0;
   font-size: 17px;
   overflow: hidden;
+  text-transform: uppercase;
 }
 
 .aside {
@@ -254,6 +253,7 @@ header {
 }
 .second h2 {
   margin: 0;
+  padding-left: 8px;
 }
 
 .second__section--mid ul {
@@ -281,6 +281,7 @@ header {
 }
 .third h2 {
   margin: 0;
+  padding-left: 8px;
 }
 
 .third__section--mid ul {
@@ -309,6 +310,7 @@ header {
 }
 .fourth h2 {
   margin: 0;
+  padding-left: 8px;
 }
 
 .fourth__section--mid ul {
@@ -337,6 +339,7 @@ header {
 }
 .fifth h2 {
   margin: 0;
+  padding-left: 8px;
 }
 
 .fifth__section--mid ul {
@@ -419,6 +422,7 @@ footer p {
 .footer__links--title {
   color: white;
   margin: 0;
+  text-transform: uppercase;
 }
 .footer__links--title img {
   width: 25px;
