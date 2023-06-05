@@ -1,0 +1,23 @@
+@mixin link ($color: $primary) {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    line-height: 5.4em;
+    margin-left: 0.2em;
+    text-transform: uppercase;
+}
+
+@mixin flexMid ($display: flex, $justify: space-between, $align: center,) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex: 1;
+}
+
+@mixin section {
+    height: 348px;
+    color: $primary;
+    background-color: $fond_bloc;
+    border-radius: 5px;
+    padding: 16px;
+}
