@@ -36,7 +36,7 @@ header {
         @include link;
 
         &:hover {
-            color: rgb(34, 58, 93);
+            color: $hover;
         }
     }
 
@@ -384,27 +384,27 @@ footer {
 }
 
 .footer__links {
-    display: flex;
-    flex-direction: column;
     border-left: 1px solid rgb(102, 191, 255);
     border-right: 1px solid rgb(0, 119, 204);
     padding: 0 24px;
 
     li {
         list-style-type: none;
+        display: flex;
+        flex-direction: column;
 
         a {
-            display: block;
-            text-decoration: none;
-            color: $primary;
-            font-size: 1.2em;
-            line-height: 1.5em;
-
-        &:hover {
-            color: rgb(34, 58, 93)
-        }
+        display: inline;
+        text-decoration: none;
+        color: $primary;
+        font-size: 1.2em;
+        line-height: 1.5em;
         }
     }
+}
+
+.footer__links a:hover {
+    color: $hover;
 }
 
 .footer__links--title {
