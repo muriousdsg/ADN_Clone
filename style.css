@@ -139,6 +139,31 @@ header {
   border-radius: 5px 0 0 5px;
 }
 
+/* SLIDER */
+.slider {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background-color: rgb(0, 149, 255);
+  color: white;
+  width: auto;
+  height: 468px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.slider__card {
+  display: flex;
+  animation: slider infinite 17s;
+}
+.slider__card--element {
+  display: flex;
+  background-color: rgb(0, 149, 255);
+  color: white;
+  border-radius: 5px;
+  flex-shrink: 0;
+  height: 468px;
+  width: 100%;
+}
+
 .carousel__flex {
   display: flex;
 }
@@ -182,6 +207,24 @@ header {
   margin-left: -50px;
 }
 
+@keyframes slider {
+  0%, 20% {
+    transform: translateX(0);
+  }
+  25%, 45% {
+    transform: translateX(-100%);
+  }
+  50%, 70% {
+    transform: translateX(-200%);
+  }
+  75%, 95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+/* FIN DU SLIDER */
 .menu {
   height: 348px;
   color: white;
